@@ -94,8 +94,8 @@ The [Phison PS3006-L](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_2GB
 - Controller: Sandisk\n S1422221\n SDTNF-256\n S228036N
 - Memory: Sandisk\n 20-99-00033-1\n M230-M465072R
 
-  [![img1](http://github.com/cyphunk/FLASHSwap/raw/master/CF_cannon_32MB/DSC06409_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_cannon_32MB/DSC06409.JPG)
-  [![img2](http://github.com/cyphunk/FLASHSwap/raw/master/CF_cannon_32MB/DSC06410_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_cannon_32MB/DSC06410.JPG)
+  [![img1](http://github.com/cyphunk/FLASHSwap/raw/master/CF_cannon_32MB/DSC06409_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_cannon_32MB/DSC06409.JPG)
+  [![img2](http://github.com/cyphunk/FLASHSwap/raw/master/CF_cannon_32MB/DSC06410_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_cannon_32MB/DSC06410.JPG)
 
 
 ### CF_hama_2GB_6MBs (current)
@@ -106,48 +106,48 @@ The [Phison PS3006-L](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_2GB
   - block size: 16K +512 spare bytes
   - voltage: 3.3v
 
-  [![img1](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_2GB_6MBs/DSC06398_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_2GB_6MBs/DSC06398.JPG)
-  [![img2](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_2GB_6MBs/DSC06402_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_2GB_6MBs/DSC06402.JPG)
-  [![img3](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_2GB_6MBs/DSC06403_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_2GB_6MBs/DSC06403.JPG)
+  [![img1](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_2GB_6MBs/DSC06398_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_2GB_6MBs/DSC06398.JPG)
+  [![img2](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_2GB_6MBs/DSC06402_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_2GB_6MBs/DSC06402.JPG)
+  [![img3](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_2GB_6MBs/DSC06403_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_2GB_6MBs/DSC06403.JPG)
 
 ### CF_hama_4GB_6MBs
 
 - Controller:
 - Memory:
 
-  [![img1](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_4GB_6MBs/DSC06394_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_4GB_6MBs/DSC06394.JPG)
-  [![img2](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_4GB_6MBs/DSC06396_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_4GB_6MBs/DSC06396.JPG)
-  [![img3](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_4GB_6MBs/DSC06397_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_4GB_6MBs/DSC06397.JPG)
+  [![img1](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_4GB_6MBs/DSC06394_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_4GB_6MBs/DSC06394.JPG)
+  [![img2](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_4GB_6MBs/DSC06396_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_4GB_6MBs/DSC06396.JPG)
+  [![img3](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_4GB_6MBs/DSC06397_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_4GB_6MBs/DSC06397.JPG)
 
 ### CF_sandisk_4GB_30MBs
 
 - Controller:
 - Memory:
 
-  [![img1](http://github.com/cyphunk/FLASHSwap/raw/master/CF_sandisk_4GB_30MBs/DSC06405_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_sandisk_4GB_30MBs/DSC06405.JPG)
-  [![img2](http://github.com/cyphunk/FLASHSwap/raw/master/CF_sandisk_4GB_30MBs/DSC06406_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_sandisk_4GB_30MBs/DSC06406.JPG)
-  [![img3](http://github.com/cyphunk/FLASHSwap/raw/master/CF_sandisk_4GB_30MBs/DSC06407_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_sandisk_4GB_30MBs/DSC06407.JPG)
-  [![img4](http://github.com/cyphunk/FLASHSwap/raw/master/CF_sandisk_4GB_30MBs/DSC06408_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_sandisk_4GB_30MBs/DSC06408.JPG)
+  [![img1](http://github.com/cyphunk/FLASHSwap/raw/master/CF_sandisk_4GB_30MBs/DSC06405_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_sandisk_4GB_30MBs/DSC06405.JPG)
+  [![img2](http://github.com/cyphunk/FLASHSwap/raw/master/CF_sandisk_4GB_30MBs/DSC06406_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_sandisk_4GB_30MBs/DSC06406.JPG)
+  [![img3](http://github.com/cyphunk/FLASHSwap/raw/master/CF_sandisk_4GB_30MBs/DSC06407_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_sandisk_4GB_30MBs/DSC06407.JPG)
+  [![img4](http://github.com/cyphunk/FLASHSwap/raw/master/CF_sandisk_4GB_30MBs/DSC06408_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_sandisk_4GB_30MBs/DSC06408.JPG)
 
 ### SD_easystore_4GB
 
 - Controller:
 - Memory:
 
-  [![img1](http://github.com/cyphunk/FLASHSwap/raw/master/SD_easystore_4GB/DSC06436_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_easystore_4GB/DSC06436.JPG)
-  [![img2](http://github.com/cyphunk/FLASHSwap/raw/master/SD_easystore_4GB/DSC06437_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_easystore_4GB/DSC06437.JPG)
+  [![img1](http://github.com/cyphunk/FLASHSwap/raw/master/SD_easystore_4GB/DSC06436_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_easystore_4GB/DSC06436.JPG)
+  [![img2](http://github.com/cyphunk/FLASHSwap/raw/master/SD_easystore_4GB/DSC06437_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_easystore_4GB/DSC06437.JPG)
 
 ### SD_hama_8GB
 
 - Controller:
 - Memory:
 
-  [![img1](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06411_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06411.JPG)
-  [![img2](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06412_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06412.JPG)
-  [![img3](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06413_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06413.JPG)
-  [![img4](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06414_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06414.JPG)
-  [![img5](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06415_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06415.JPG)
-  [![img6](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06416_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06416.JPG)
+  [![img1](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06411_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06411.JPG)
+  [![img2](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06412_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06412.JPG)
+  [![img3](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06413_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06413.JPG)
+  [![img4](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06414_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06414.JPG)
+  [![img5](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06415_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06415.JPG)
+  [![img6](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06416_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06416.JPG)
 
 
 ### SD_samsung_4GB
@@ -155,21 +155,21 @@ The [Phison PS3006-L](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_2GB
 - Controller:
 - Memory:
 
-  [![img1](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06417_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06417.JPG)
-  [![img2](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06418_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06418.JPG)
-  [![img3](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06419_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06419.JPG)
-  [![img4](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06420_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06420.JPG)
-  [![img5](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06421_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06421.JPG)
-  [![img6](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06422_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06422.JPG)
-  [![img7](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06423_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06423.JPG)
-  [![img8](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06424_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06424.JPG)
-  [![img9](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06425_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06425.JPG)
-  [![img10](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06426_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06426.JPG)
-  [![img11](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06428_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06428.JPG)
-  [![img12](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06429_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06429.JPG)
-  [![img13](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06430_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06430.JPG)
-  [![img14](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06431_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06431.JPG)
-  [![img15](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06432_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06432.JPG)
+  [![img1](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06417_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06417.JPG)
+  [![img2](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06418_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06418.JPG)
+  [![img3](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06419_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06419.JPG)
+  [![img4](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06420_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06420.JPG)
+  [![img5](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06421_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06421.JPG)
+  [![img6](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06422_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06422.JPG)
+  [![img7](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06423_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06423.JPG)
+  [![img8](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06424_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06424.JPG)
+  [![img9](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06425_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06425.JPG)
+  [![img10](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06426_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06426.JPG)
+  [![img11](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06428_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06428.JPG)
+  [![img12](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06429_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06429.JPG)
+  [![img13](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06430_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06430.JPG)
+  [![img14](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06431_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06431.JPG)
+  [![img15](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06432_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06432.JPG)
 
 
 ### SD_sandisk_4GB
@@ -177,9 +177,9 @@ The [Phison PS3006-L](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_2GB
 - Controller:
 - Memory:
 
-  [![img1](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sandisk_4GB/DSC06439_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sandisk_4GB/DSC06439.JPG)
-  [![img2](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sandisk_4GB/DSC06440_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sandisk_4GB/DSC06440.JPG)
-  [![img3](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sandisk_4GB/DSC06441_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sandisk_4GB/DSC06441.JPG)
+  [![img1](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sandisk_4GB/DSC06439_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sandisk_4GB/DSC06439.JPG)
+  [![img2](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sandisk_4GB/DSC06440_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sandisk_4GB/DSC06440.JPG)
+  [![img3](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sandisk_4GB/DSC06441_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sandisk_4GB/DSC06441.JPG)
 
 
 ### SD_sony_4GB
@@ -187,6 +187,6 @@ The [Phison PS3006-L](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_2GB
 - Controller:
 - Memory:
 
-  [![img1](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sony_4GB/DSC06433_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sony_4GB/DSC06433.JPG)
-  [![img2](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sony_4GB/DSC06434_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sony_4GB/DSC06434.JPG)
-  [![img3](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sony_4GB/DSC06435_sm.JPG)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sony_4GB/DSC06435.JPG)
+  [![img1](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sony_4GB/DSC06433_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sony_4GB/DSC06433.JPG)
+  [![img2](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sony_4GB/DSC06434_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sony_4GB/DSC06434.JPG)
+  [![img3](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sony_4GB/DSC06435_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sony_4GB/DSC06435.JPG)
