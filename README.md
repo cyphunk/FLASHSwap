@@ -2,7 +2,7 @@
 I'm exploring a method for dumping memory from an embedded device whereby I take the target FLASH chip and put it in place of the FLASH chip found in a Compact Flash card. I will give an overview of the resources and plan for this but at the moment I'd appreciate comment on an issue im having thus far.
 
 ## Status & Question
-I found a Hama 4GB CF card that contained a 2GB (16Gb) Hynix 8bit FLASH ([H27UAG8T2ATR](http://github.com/cyphunk/FLASHswap/raw/master/CF_hama_2GB_6MBs/hynix_hy27ua.pdf)). I have a target with another 256MB (2Gb) Hynix 8bit flash ([HY27UF082G2G](http://catalog.gaw.ru/project/download.php?id=11311)). I swapped them and now I'm having an issue when attaching under linux. The objective is to make a raw copy:
+I found a Hama 4GB CF card that contained a 2GB (16Gb) Hynix 8bit FLASH ([H27UAG8T2ATR](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_2GB_6MBs/hynix_hy27ua.pdf)). I have a target with another 256MB (2Gb) Hynix 8bit flash ([HY27UF082G2G](http://catalog.gaw.ru/project/download.php?id=11311)). I swapped them and now I'm having an issue when attaching under linux. The objective is to make a raw copy:
 
 ```
 $ dmesg
@@ -12,7 +12,7 @@ $ dd if=/dev/sdc of=/tmp/sdc.raw count=10
 dd: opening `dev/sdc': No medium found
 ```
 
-It appears the CF controller ([Phison PS3006-L](http://github.com/cyphunk/FLASHswap/raw/master/CF_hama_2GB_6MBs/Phison PS3006.pdf)) was found but that either it or the linux driver do not see the CF details required to use it. Here is a comparison of the udev information for the tampered CF and an untampered CF (32MB):
+It appears the CF controller ([Phison PS3006-L](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_2GB_6MBs/Phison PS3006.pdf)) was found but that either it or the linux driver do not see the CF details required to use it. Here is a comparison of the udev information for the tampered CF and an untampered CF (32MB):
 
 ```
 // The tampered CF:
@@ -85,7 +85,7 @@ For the record, here is a comparison of the messages sent to dmesg for the two:
 
 The other differences to note between the 2GB and 256MB FLASH chips other that size are the Page and Block size. The 2GB has 512+16 spare page size with 16K+512 spare block size (8 bit bus width). The 265MB has 2K+64 spare page size and 12K+4K spare block size.
 
-The [Phison PS3006-L](http://github.com/cyphunk/FLASHswap/raw/master/CF_hama_2GB_6MBs/Phison PS3006.pdf) controller does not appear to have any configurable memory, if I read the datasheet correct. It appears its settings are configured by toggling pins. So this might be something to investigate to see if a simple change of state on some of the pins might allow the controller to read the swapped FLASH.
+The [Phison PS3006-L](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_2GB_6MBs/Phison PS3006.pdf) controller does not appear to have any configurable memory, if I read the datasheet correct. It appears its settings are configured by toggling pins. So this might be something to investigate to see if a simple change of state on some of the pins might allow the controller to read the swapped FLASH.
 
 ## Target Cards
 
@@ -94,60 +94,60 @@ The [Phison PS3006-L](http://github.com/cyphunk/FLASHswap/raw/master/CF_hama_2GB
 - Controller: Sandisk\n S1422221\n SDTNF-256\n S228036N
 - Memory: Sandisk\n 20-99-00033-1\n M230-M465072R
 
-  [![img1](http://github.com/cyphunk/FLASHswap/raw/master/CF_cannon_32MB/DSC06409_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/CF_cannon_32MB/DSC06409.jpg)
-  [![img2](http://github.com/cyphunk/FLASHswap/raw/master/CF_cannon_32MB/DSC06410_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/CF_cannon_32MB/DSC06410.jpg)
+  [![img1](http://github.com/cyphunk/FLASHSwap/raw/master/CF_cannon_32MB/DSC06409_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_cannon_32MB/DSC06409.jpg)
+  [![img2](http://github.com/cyphunk/FLASHSwap/raw/master/CF_cannon_32MB/DSC06410_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_cannon_32MB/DSC06410.jpg)
 
 
 ### CF_hama_2GB_6MBs (current)
 
-- Controller: [Phison PS3006-L](http://github.com/cyphunk/FLASHswap/raw/master/CF_hama_2GB_6MBs/Phison PS3006.pdf)
-- Memory: Hynix [H27UAG8T2ATR](http://github.com/cyphunk/FLASHswap/raw/master/CF_hama_2GB_6MBs/hynix_hy27ua.pdf) (aka HY27U)
+- Controller: [Phison PS3006-L](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_2GB_6MBs/Phison PS3006.pdf)
+- Memory: Hynix [H27UAG8T2ATR](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_2GB_6MBs/hynix_hy27ua.pdf) (aka HY27U)
   - page size: 512+16 spare 8 bytes (bus width)
   - block size: 16K +512 spare bytes
   - voltage: 3.3v
 
-  [![img1](http://github.com/cyphunk/FLASHswap/raw/master/CF_hama_2GB_6MBs/DSC06398_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/CF_hama_2GB_6MBs/DSC06398.jpg)
-  [![img2](http://github.com/cyphunk/FLASHswap/raw/master/CF_hama_2GB_6MBs/DSC06402_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/CF_hama_2GB_6MBs/DSC06402.jpg)
-  [![img3](http://github.com/cyphunk/FLASHswap/raw/master/CF_hama_2GB_6MBs/DSC06403_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/CF_hama_2GB_6MBs/DSC06403.jpg)
+  [![img1](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_2GB_6MBs/DSC06398_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_2GB_6MBs/DSC06398.jpg)
+  [![img2](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_2GB_6MBs/DSC06402_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_2GB_6MBs/DSC06402.jpg)
+  [![img3](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_2GB_6MBs/DSC06403_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_2GB_6MBs/DSC06403.jpg)
 
 ### CF_hama_4GB_6MBs
 
 - Controller:
 - Memory:
 
-  [![img1](http://github.com/cyphunk/FLASHswap/raw/master/CF_hama_4GB_6MBs/DSC06394_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/CF_hama_4GB_6MBs/DSC06394.jpg)
-  [![img2](http://github.com/cyphunk/FLASHswap/raw/master/CF_hama_4GB_6MBs/DSC06396_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/CF_hama_4GB_6MBs/DSC06396.jpg)
-  [![img3](http://github.com/cyphunk/FLASHswap/raw/master/CF_hama_4GB_6MBs/DSC06397_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/CF_hama_4GB_6MBs/DSC06397.jpg)
+  [![img1](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_4GB_6MBs/DSC06394_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_4GB_6MBs/DSC06394.jpg)
+  [![img2](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_4GB_6MBs/DSC06396_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_4GB_6MBs/DSC06396.jpg)
+  [![img3](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_4GB_6MBs/DSC06397_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_hama_4GB_6MBs/DSC06397.jpg)
 
 ### CF_sandisk_4GB_30MBs
 
 - Controller:
 - Memory:
 
-  [![img1](http://github.com/cyphunk/FLASHswap/raw/master/CF_sandisk_4GB_30MBs/DSC06405_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/CF_sandisk_4GB_30MBs/DSC06405.jpg)
-  [![img2](http://github.com/cyphunk/FLASHswap/raw/master/CF_sandisk_4GB_30MBs/DSC06406_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/CF_sandisk_4GB_30MBs/DSC06406.jpg)
-  [![img3](http://github.com/cyphunk/FLASHswap/raw/master/CF_sandisk_4GB_30MBs/DSC06407_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/CF_sandisk_4GB_30MBs/DSC06407.jpg)
-  [![img4](http://github.com/cyphunk/FLASHswap/raw/master/CF_sandisk_4GB_30MBs/DSC06408_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/CF_sandisk_4GB_30MBs/DSC06408.jpg)
+  [![img1](http://github.com/cyphunk/FLASHSwap/raw/master/CF_sandisk_4GB_30MBs/DSC06405_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_sandisk_4GB_30MBs/DSC06405.jpg)
+  [![img2](http://github.com/cyphunk/FLASHSwap/raw/master/CF_sandisk_4GB_30MBs/DSC06406_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_sandisk_4GB_30MBs/DSC06406.jpg)
+  [![img3](http://github.com/cyphunk/FLASHSwap/raw/master/CF_sandisk_4GB_30MBs/DSC06407_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_sandisk_4GB_30MBs/DSC06407.jpg)
+  [![img4](http://github.com/cyphunk/FLASHSwap/raw/master/CF_sandisk_4GB_30MBs/DSC06408_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/CF_sandisk_4GB_30MBs/DSC06408.jpg)
 
 ### SD_easystore_4GB
 
 - Controller:
 - Memory:
 
-  [![img1](http://github.com/cyphunk/FLASHswap/raw/master/SD_easystore_4GB/DSC06436_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/SD_easystore_4GB/DSC06436.jpg)
-  [![img2](http://github.com/cyphunk/FLASHswap/raw/master/SD_easystore_4GB/DSC06437_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/SD_easystore_4GB/DSC06437.jpg)
+  [![img1](http://github.com/cyphunk/FLASHSwap/raw/master/SD_easystore_4GB/DSC06436_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_easystore_4GB/DSC06436.jpg)
+  [![img2](http://github.com/cyphunk/FLASHSwap/raw/master/SD_easystore_4GB/DSC06437_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_easystore_4GB/DSC06437.jpg)
 
 ### SD_hama_8GB
 
 - Controller:
 - Memory:
 
-  [![img1](http://github.com/cyphunk/FLASHswap/raw/master/SD_hama_8GB/DSC06411_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/SD_hama_8GB/DSC06411.jpg)
-  [![img2](http://github.com/cyphunk/FLASHswap/raw/master/SD_hama_8GB/DSC06412_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/SD_hama_8GB/DSC06412.jpg)
-  [![img3](http://github.com/cyphunk/FLASHswap/raw/master/SD_hama_8GB/DSC06413_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/SD_hama_8GB/DSC06413.jpg)
-  [![img4](http://github.com/cyphunk/FLASHswap/raw/master/SD_hama_8GB/DSC06414_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/SD_hama_8GB/DSC06414.jpg)
-  [![img5](http://github.com/cyphunk/FLASHswap/raw/master/SD_hama_8GB/DSC06415_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/SD_hama_8GB/DSC06415.jpg)
-  [![img6](http://github.com/cyphunk/FLASHswap/raw/master/SD_hama_8GB/DSC06416_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/SD_hama_8GB/DSC06416.jpg)
+  [![img1](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06411_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06411.jpg)
+  [![img2](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06412_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06412.jpg)
+  [![img3](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06413_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06413.jpg)
+  [![img4](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06414_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06414.jpg)
+  [![img5](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06415_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06415.jpg)
+  [![img6](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06416_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_hama_8GB/DSC06416.jpg)
 
 
 ### SD_samsung_4GB
@@ -155,21 +155,21 @@ The [Phison PS3006-L](http://github.com/cyphunk/FLASHswap/raw/master/CF_hama_2GB
 - Controller:
 - Memory:
 
-  [![img1](http://github.com/cyphunk/FLASHswap/raw/master/SD_samsung_4GB/DSC06417_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/SD_samsung_4GB/DSC06417.jpg)
-  [![img2](http://github.com/cyphunk/FLASHswap/raw/master/SD_samsung_4GB/DSC06418_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/SD_samsung_4GB/DSC06418.jpg)
-  [![img3](http://github.com/cyphunk/FLASHswap/raw/master/SD_samsung_4GB/DSC06419_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/SD_samsung_4GB/DSC06419.jpg)
-  [![img4](http://github.com/cyphunk/FLASHswap/raw/master/SD_samsung_4GB/DSC06420_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/SD_samsung_4GB/DSC06420.jpg)
-  [![img5](http://github.com/cyphunk/FLASHswap/raw/master/SD_samsung_4GB/DSC06421_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/SD_samsung_4GB/DSC06421.jpg)
-  [![img6](http://github.com/cyphunk/FLASHswap/raw/master/SD_samsung_4GB/DSC06422_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/SD_samsung_4GB/DSC06422.jpg)
-  [![img7](http://github.com/cyphunk/FLASHswap/raw/master/SD_samsung_4GB/DSC06423_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/SD_samsung_4GB/DSC06423.jpg)
-  [![img8](http://github.com/cyphunk/FLASHswap/raw/master/SD_samsung_4GB/DSC06424_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/SD_samsung_4GB/DSC06424.jpg)
-  [![img9](http://github.com/cyphunk/FLASHswap/raw/master/SD_samsung_4GB/DSC06425_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/SD_samsung_4GB/DSC06425.jpg)
-  [![img10](http://github.com/cyphunk/FLASHswap/raw/master/SD_samsung_4GB/DSC06426_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/SD_samsung_4GB/DSC06426.jpg)
-  [![img11](http://github.com/cyphunk/FLASHswap/raw/master/SD_samsung_4GB/DSC06428_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/SD_samsung_4GB/DSC06428.jpg)
-  [![img12](http://github.com/cyphunk/FLASHswap/raw/master/SD_samsung_4GB/DSC06429_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/SD_samsung_4GB/DSC06429.jpg)
-  [![img13](http://github.com/cyphunk/FLASHswap/raw/master/SD_samsung_4GB/DSC06430_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/SD_samsung_4GB/DSC06430.jpg)
-  [![img14](http://github.com/cyphunk/FLASHswap/raw/master/SD_samsung_4GB/DSC06431_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/SD_samsung_4GB/DSC06431.jpg)
-  [![img15](http://github.com/cyphunk/FLASHswap/raw/master/SD_samsung_4GB/DSC06432_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/SD_samsung_4GB/DSC06432.jpg)
+  [![img1](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06417_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06417.jpg)
+  [![img2](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06418_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06418.jpg)
+  [![img3](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06419_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06419.jpg)
+  [![img4](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06420_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06420.jpg)
+  [![img5](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06421_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06421.jpg)
+  [![img6](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06422_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06422.jpg)
+  [![img7](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06423_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06423.jpg)
+  [![img8](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06424_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06424.jpg)
+  [![img9](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06425_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06425.jpg)
+  [![img10](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06426_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06426.jpg)
+  [![img11](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06428_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06428.jpg)
+  [![img12](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06429_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06429.jpg)
+  [![img13](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06430_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06430.jpg)
+  [![img14](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06431_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06431.jpg)
+  [![img15](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06432_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_samsung_4GB/DSC06432.jpg)
 
 
 ### SD_sandisk_4GB
@@ -177,9 +177,9 @@ The [Phison PS3006-L](http://github.com/cyphunk/FLASHswap/raw/master/CF_hama_2GB
 - Controller:
 - Memory:
 
-  [![img1](http://github.com/cyphunk/FLASHswap/raw/master/SD_sandisk_4GB/DSC06439_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/SD_sandisk_4GB/DSC06439.jpg)
-  [![img2](http://github.com/cyphunk/FLASHswap/raw/master/SD_sandisk_4GB/DSC06440_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/SD_sandisk_4GB/DSC06440.jpg)
-  [![img3](http://github.com/cyphunk/FLASHswap/raw/master/SD_sandisk_4GB/DSC06441_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/SD_sandisk_4GB/DSC06441.jpg)
+  [![img1](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sandisk_4GB/DSC06439_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sandisk_4GB/DSC06439.jpg)
+  [![img2](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sandisk_4GB/DSC06440_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sandisk_4GB/DSC06440.jpg)
+  [![img3](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sandisk_4GB/DSC06441_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sandisk_4GB/DSC06441.jpg)
 
 
 ### SD_sony_4GB
@@ -187,6 +187,6 @@ The [Phison PS3006-L](http://github.com/cyphunk/FLASHswap/raw/master/CF_hama_2GB
 - Controller:
 - Memory:
 
-  [![img1](http://github.com/cyphunk/FLASHswap/raw/master/SD_sony_4GB/DSC06433_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/SD_sony_4GB/DSC06433.jpg)
-  [![img2](http://github.com/cyphunk/FLASHswap/raw/master/SD_sony_4GB/DSC06434_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/SD_sony_4GB/DSC06434.jpg)
-  [![img3](http://github.com/cyphunk/FLASHswap/raw/master/SD_sony_4GB/DSC06435_sm.jpg)](http://github.com/cyphunk/FLASHswap/raw/master/SD_sony_4GB/DSC06435.jpg)
+  [![img1](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sony_4GB/DSC06433_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sony_4GB/DSC06433.jpg)
+  [![img2](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sony_4GB/DSC06434_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sony_4GB/DSC06434.jpg)
+  [![img3](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sony_4GB/DSC06435_sm.jpg)](http://github.com/cyphunk/FLASHSwap/raw/master/SD_sony_4GB/DSC06435.jpg)
